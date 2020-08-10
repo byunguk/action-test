@@ -10,4 +10,4 @@ jobs:
     - uses: actions/checkout@v2
     - uses: byunguk/action-runner@master
       with:
-        who-to-greet: 'Mona the Octocat'
+        api_version: 29
