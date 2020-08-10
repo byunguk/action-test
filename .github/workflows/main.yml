@@ -10,4 +10,4 @@ jobs:
     - uses: actions/checkout@v2
     - uses: byunguk/action-runner@master
       with:
-        api_version: '29'
+        api-version: '29'
