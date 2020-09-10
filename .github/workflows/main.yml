@@ -16,4 +16,4 @@ jobs:
 
       - name: Create keystore
         run: |
-          echo ${{ secrets.KEYSTORE_BASE64 }} > leia.jks.asc
+          echo "${{ secrets.KEYSTORE_BASE64 }}" > leia.jks.asc
