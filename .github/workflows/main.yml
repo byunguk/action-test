@@ -12,8 +12,8 @@ jobs:
       #  with:
       #    api-version: 29
       - name: Install GPG
-        run: sudo apt install gnupg
-        
+        run: sudo apt-get install gnupg2
+
       - name: Create keystore
         run: |
          echo ${{ secrets.KEYSTORE_BASE64 }} > leia.jks.asc
