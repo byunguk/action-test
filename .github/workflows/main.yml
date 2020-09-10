@@ -7,7 +7,11 @@ jobs:
     runs-on: macos-latest
     name: Android UI Test
     steps:
-    - uses: actions/checkout@v2
-    - uses: byunguk/action-runner@master
-      with:
-        api-version: 29
+      - uses: actions/checkout@v2
+      - uses: byunguk/action-runner@master
+        with:
+          api-version: 29
+      
+      - name: Create keystore
+        run: |
+         echo ${{ secrets.KEYSTORE_BASE64 }} > leia.jks.asc
