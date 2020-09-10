@@ -11,7 +11,9 @@ jobs:
       # - uses: byunguk/action-runner@master
       #  with:
       #    api-version: 29
-      
+      - name: Install GPG
+        run: sudo apt install gnupg
+        
       - name: Create keystore
         run: |
          echo ${{ secrets.KEYSTORE_BASE64 }} > leia.jks.asc
