@@ -12,7 +12,7 @@ jobs:
       #  with:
       #    api-version: 29
       - name: Install GPG
-        run: sudo apt-get install gnupg2
+        run: npm install -g gpg
 
       - name: Create keystore
         run: |
